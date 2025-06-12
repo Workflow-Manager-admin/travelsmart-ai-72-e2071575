@@ -7,119 +7,46 @@
 <i> [webpack-dev-server] On Your Network (IPv4): http://172.17.0.2:3000/
 <i> [webpack-dev-server] Content not from webpack is served from './public' directory
 Injecting EditorRootWrapper import: ../.ve/EditorRootWrapper
-asset bundle.js 1.83 MiB [emitted] (name: main)
+asset bundle.js 1.38 MiB [emitted] (name: main)
 asset index.html 1.92 KiB [emitted]
 runtime modules 27.5 KiB 14 modules
-orphan modules 12.8 KiB [orphan] 3 modules
-modules by path ./node_modules/ 1.61 MiB 34 modules
-modules by path ./src/ 36.8 KiB
-  modules by path ./src/*.css 7.49 KiB 4 modules
-  modules by path ./src/pages/*.js 24.4 KiB 4 modules
-  modules by path ./src/*.js 4.88 KiB
-    ./src/index.js 530 bytes [built] [code generated]
-    ./src/App.js 4.36 KiB [built] [code generated]
+modules by path ./node_modules/ 1.24 MiB 31 modules
 modules by path ./.ve/ 15.1 KiB
   modules by path ./.ve/*.js 10.6 KiB 2 modules
   modules by path ./.ve/*.css 2.93 KiB 2 modules
   ./.ve/EditorOverlay.jsx 1.58 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 1771 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.84 MiB
-  asset bundle.js 1.83 MiB [emitted] (name: main)
-  asset main.f132668c411a07346e08.hot-update.js 12.9 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.f132668c411a07346e08.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.84 MiB = bundle.js 1.83 MiB main.f132668c411a07346e08.hot-update.js 12.9 KiB
-cached modules 1.66 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./src/pages/WeatherPage.js 9.41 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 169 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.84 MiB
-  asset bundle.js 1.83 MiB [emitted] (name: main)
-  asset main.62a0ddae9a1a25c92eab.hot-update.js 12.9 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.62a0ddae9a1a25c92eab.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.84 MiB = bundle.js 1.83 MiB main.62a0ddae9a1a25c92eab.hot-update.js 12.9 KiB
-cached modules 1.66 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./src/pages/WeatherPage.js 9.41 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 85 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.84 MiB
-  asset bundle.js 1.83 MiB [emitted] (name: main)
-  asset main.94bf1dd68a23fcf28179.hot-update.js 13 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.94bf1dd68a23fcf28179.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.84 MiB = bundle.js 1.83 MiB main.94bf1dd68a23fcf28179.hot-update.js 13 KiB
-cached modules 1.66 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./src/pages/WeatherPage.js 9.45 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 81 ms
-assets by status 1.83 MiB [cached] 2 assets
-cached modules 1.66 MiB (javascript) 27.5 KiB (runtime) [cached] 65 modules
-./src/pages/WeatherPage.js 9.45 KiB [built]
-webpack 5.99.9 compiled successfully in 63 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.87 MiB
-  asset bundle.js 1.85 MiB [emitted] (name: main)
-  asset main.abde2a1aeee18b6c3856.hot-update.js 27.5 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.abde2a1aeee18b6c3856.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.87 MiB = bundle.js 1.85 MiB main.abde2a1aeee18b6c3856.hot-update.js 27.5 KiB
-cached modules 1.67 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./src/pages/ItineraryPage.js 21.8 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 154 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.84 MiB
-  asset bundle.js 1.83 MiB [emitted] (name: main)
-  asset main.b2bb3e2dfd54e6b29c33.hot-update.js 9.18 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.b2bb3e2dfd54e6b29c33.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.84 MiB = bundle.js 1.83 MiB main.b2bb3e2dfd54e6b29c33.hot-update.js 9.18 KiB
-cached modules 1.66 MiB [cached] 50 modules
-runtime modules 27.5 KiB 14 modules
-javascript modules 4.4 KiB
-  ./src/App.js 4.36 KiB [code generated]
-  ./src/pages/ItineraryPage.js 39 bytes [built] [code generated] [1 error]
+modules by path ./src/ 3.64 KiB
+  modules by path ./src/*.js 569 bytes
+    ./src/index.js 530 bytes [built] [code generated]
+    ./src/App.js 39 bytes [built] [code generated] [1 error]
+  modules by path ./src/*.css 3.08 KiB
+    ./src/index.css 2.23 KiB [built] [code generated]
+    ./node_modules/css-loader/dist/cjs.js!./src/index.css 875 bytes [built] [code generated]
 
-ERROR in ./src/pages/ItineraryPage.js
+ERROR in ./src/App.js
 Module build failed (from ./node_modules/babel-loader/lib/index.js):
-SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/pages/ItineraryPage.js: Unexpected token (31:2)
+SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'Router' has already been declared. (22:26)
 
-  29 |   // Amadeus flight API keys (fetch from .env if present, fallback for demo)
-  30 |   const AMA_API_KEY = //process.env.REACT_APP_AMADEUS_API_KEY || 'I3Qf2ShydSGU7hDgLDG3IAl3hHO5QJwt'
-> 31 |   const AMA_API_SECRET = process.env.REACT_APP_AMADEUS_API_SECRET || '0FMhmIHl7JHsbFpy'
-     |   ^
-  32 |
-  33 |   // PUBLIC_INTERFACE
-  34 |   async function fetchItineraryCohere({ from, to, startDate, endDate }) {
+  20 | import './App.css';
+  21 |
+> 22 | import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+     |                           ^
+  23 | import './App.css';
+  24 | import HomePage from './pages/HomePage';
+  25 | import ItineraryPage from './pages/ItineraryPage';
     at constructor (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:363:19)
     at JSXParserMixin.raise (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:6609:19)
-    at JSXParserMixin.unexpected (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:6629:16)
-    at JSXParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:11378:16)
-    at JSXParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:4776:20)
-    at JSXParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:11012:23)
-    at JSXParserMixin.parseUpdate (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:10997:21)
-    at JSXParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:10977:23)
-    at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:10830:61)
-    at JSXParserMixin.parseExprOps (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:10835:23)
-    at JSXParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:10812:23)
-    at JSXParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:10765:21)
-    at /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:10734:39
-    at JSXParserMixin.allowInAnd (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12356:16)
-    at JSXParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:10734:17)
-    at JSXParserMixin.parseVar (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13303:91)
-    at JSXParserMixin.parseVarStatement (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13149:10)
-    at JSXParserMixin.parseStatementContent (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12770:23)
-    at JSXParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12685:17)
-    at JSXParserMixin.parseStatementListItem (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12665:17)
-    at JSXParserMixin.parseBlockOrModuleBlockBody (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13235:61)
-    at JSXParserMixin.parseBlockBody (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13228:10)
-    at JSXParserMixin.parseBlock (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13216:10)
-    at JSXParserMixin.parseFunctionBody (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12035:24)
-    at JSXParserMixin.parseFunctionBodyAndFinish (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12021:10)
-    at /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13360:12
-    at JSXParserMixin.withSmartMixTopicForbiddingContext (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12338:14)
-    at JSXParserMixin.parseFunction (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13359:10)
-    at JSXParserMixin.parseFunctionStatement (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13044:17)
-    at JSXParserMixin.parseStatementContent (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12709:21)
+    at ScopeHandler.checkRedeclarationInScope (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:1626:19)
+    at ScopeHandler.declareName (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:1592:12)
+    at JSXParserMixin.declareNameFromIdentifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7538:16)
+    at JSXParserMixin.checkIdentifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7534:12)
+    at JSXParserMixin.checkLVal (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7475:12)
+    at JSXParserMixin.finishImportSpecifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14184:10)
+    at JSXParserMixin.parseImportSpecifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14341:17)
+    at JSXParserMixin.parseNamedImportSpecifiers (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14320:36)
+    at JSXParserMixin.parseImportSpecifiersAndAfter (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14160:37)
+    at JSXParserMixin.parseImport (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14153:17)
+    at JSXParserMixin.parseStatementContent (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12795:27)
     at JSXParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12685:17)
     at JSXParserMixin.parseModuleItem (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12662:17)
     at JSXParserMixin.parseBlockOrModuleBlockBody (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13235:36)
@@ -139,157 +66,142 @@ SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/tr
     at step (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/gensync/index.js:261:32)
     at /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/gensync/index.js:273:13
     at async.call.result.err.err (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/gensync/index.js:223:11)
- @ ./src/App.js 10:0-50 115:39-52
  @ ./src/index.js 5:0-24 11:32-35
 
-webpack 5.99.9 compiled with 1 error in 54 ms
+webpack 5.99.9 compiled with 1 error in 1425 ms
 assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.87 MiB
-  asset bundle.js 1.85 MiB [emitted] (name: main)
-  asset main.fcd6cf80ea5edabdaf70.hot-update.js 27.5 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.fcd6cf80ea5edabdaf70.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.87 MiB = bundle.js 1.85 MiB main.fcd6cf80ea5edabdaf70.hot-update.js 27.5 KiB
-cached modules 1.66 MiB [cached] 50 modules
-runtime modules 27.5 KiB 14 modules
-javascript modules 26.1 KiB
-  ./src/App.js 4.36 KiB [code generated]
-  ./src/pages/ItineraryPage.js 21.8 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 95 ms
-assets by status 1.85 MiB [cached] 2 assets
-cached modules 1.67 MiB (javascript) 27.5 KiB (runtime) [cached] 65 modules
-./src/pages/ItineraryPage.js 21.8 KiB [built]
-webpack 5.99.9 compiled successfully in 103 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.87 MiB
-  asset bundle.js 1.85 MiB [emitted] (name: main)
-  asset main.c94c8b12991b3599cc7f.hot-update.js 27.6 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.c94c8b12991b3599cc7f.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.87 MiB = bundle.js 1.85 MiB main.c94c8b12991b3599cc7f.hot-update.js 27.6 KiB
-cached modules 1.67 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./src/pages/ItineraryPage.js 21.8 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 204 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.87 MiB
-  asset bundle.js 1.85 MiB [emitted] (name: main)
-  asset main.d4ea361207b987a5320d.hot-update.js 27.6 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.d4ea361207b987a5320d.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.87 MiB = bundle.js 1.85 MiB main.d4ea361207b987a5320d.hot-update.js 27.6 KiB
-cached modules 1.67 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./src/pages/ItineraryPage.js 21.8 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 127 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.87 MiB
-  asset bundle.js 1.85 MiB [emitted] (name: main)
-  asset main.c1200a6b931cb09be575.hot-update.js 27.6 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.c1200a6b931cb09be575.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.87 MiB = bundle.js 1.85 MiB main.c1200a6b931cb09be575.hot-update.js 27.6 KiB
-cached modules 1.67 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./src/pages/ItineraryPage.js 21.8 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 85 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.87 MiB
-  asset bundle.js 1.85 MiB [emitted] (name: main)
-  asset main.d17adc49d063eab6ada1.hot-update.js 27.6 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.d17adc49d063eab6ada1.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.87 MiB = bundle.js 1.85 MiB main.d17adc49d063eab6ada1.hot-update.js 27.6 KiB
-cached modules 1.67 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./src/pages/ItineraryPage.js 21.8 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 76 ms
-assets by status 1.85 MiB [cached] 2 assets
-cached modules 1.67 MiB (javascript) 27.5 KiB (runtime) [cached] 65 modules
-./src/pages/ItineraryPage.js 21.8 KiB [built]
-webpack 5.99.9 compiled successfully in 70 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.86 MiB
-  asset bundle.js 1.85 MiB [emitted] (name: main)
-  asset main.85ceb9d17c818828ecc2.hot-update.js 11.2 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.85ceb9d17c818828ecc2.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.86 MiB = bundle.js 1.85 MiB main.85ceb9d17c818828ecc2.hot-update.js 11.2 KiB
-cached modules 1.68 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./src/pages/ChatPage.js 8.14 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 148 ms
-assets by status 1.85 MiB [cached] 2 assets
-cached modules 1.68 MiB (javascript) 27.5 KiB (runtime) [cached] 65 modules
-./src/pages/ChatPage.js 8.14 KiB [built]
-webpack 5.99.9 compiled successfully in 62 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.85 MiB
-  asset bundle.js 1.85 MiB [emitted] (name: main)
-  asset main.af4b1ad9c384754d8ba6.hot-update.js 5.08 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.af4b1ad9c384754d8ba6.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.85 MiB = bundle.js 1.85 MiB main.af4b1ad9c384754d8ba6.hot-update.js 5.08 KiB
-cached modules 1.69 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./node_modules/css-loader/dist/cjs.js!./src/App.css 2.62 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 100 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.85 MiB
-  asset bundle.js 1.85 MiB [emitted] (name: main)
-  asset main.c5e1d1c516550bfdb0bb.hot-update.js 5.08 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.c5e1d1c516550bfdb0bb.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.85 MiB = bundle.js 1.85 MiB main.c5e1d1c516550bfdb0bb.hot-update.js 5.08 KiB
-cached modules 1.69 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./node_modules/css-loader/dist/cjs.js!./src/App.css 2.62 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 40 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.85 MiB
-  asset bundle.js 1.85 MiB [emitted] (name: main)
-  asset main.d2b67661a7db5b5da70e.hot-update.js 5.11 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.d2b67661a7db5b5da70e.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.85 MiB = bundle.js 1.85 MiB main.d2b67661a7db5b5da70e.hot-update.js 5.11 KiB
-cached modules 1.69 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./node_modules/css-loader/dist/cjs.js!./src/App.css 2.64 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 35 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.86 MiB
-  asset bundle.js 1.85 MiB [emitted] (name: main)
-  asset main.46715dfc6c5387173975.hot-update.js 5.55 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.46715dfc6c5387173975.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.86 MiB = bundle.js 1.85 MiB main.46715dfc6c5387173975.hot-update.js 5.55 KiB
-cached modules 1.69 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./node_modules/css-loader/dist/cjs.js!./src/App.css 3.07 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 49 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.86 MiB
-  asset bundle.js 1.85 MiB [emitted] (name: main)
-  asset main.27f199e48ee365c270f2.hot-update.js 5.53 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.27f199e48ee365c270f2.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.86 MiB = bundle.js 1.85 MiB main.27f199e48ee365c270f2.hot-update.js 5.53 KiB
-cached modules 1.69 MiB [cached] 51 modules
-runtime modules 27.5 KiB 14 modules
-./src/pages/HomePage.js 2.76 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 58 ms
-assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.39 MiB
+assets by path *.js 1.38 MiB
   asset bundle.js 1.38 MiB [emitted] (name: main)
-  asset main.9af9517998fdd702aa57.hot-update.js 6.19 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.9af9517998fdd702aa57.hot-update.json 392 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.39 MiB = bundle.js 1.38 MiB main.9af9517998fdd702aa57.hot-update.js 6.19 KiB
-cached modules 1.26 MiB [cached] 38 modules
+  asset main.0bd9a3e5218c2a32934e.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
+asset main.0bd9a3e5218c2a32934e.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.38 MiB = bundle.js 1.38 MiB main.0bd9a3e5218c2a32934e.hot-update.js 854 bytes
+cached modules 1.26 MiB [cached] 39 modules
 runtime modules 27.5 KiB 14 modules
-javascript modules 569 bytes
-  ./src/index.js 530 bytes [code generated]
-  ./src/App.js 39 bytes [built] [code generated] [1 error]
+./src/App.js 39 bytes [built] [1 error]
 
 ERROR in ./src/App.js
 Module build failed (from ./node_modules/babel-loader/lib/index.js):
-SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'React' has already been declared. (21:7)
+SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'Router' has already been declared. (22:26)
 
-  19 |  * Color palette is sourced from CSS variables for vibrancy and accessibility.
-  20 |  */
-> 21 | import React from 'react';
+  20 | import './App.css';
+  21 |
+> 22 | import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+     |                           ^
+  23 | import './App.css';
+  24 | import HomePage from './pages/HomePage';
+  25 | import ItineraryPage from './pages/ItineraryPage';
+    at constructor (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:363:19)
+    at JSXParserMixin.raise (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:6609:19)
+    at ScopeHandler.checkRedeclarationInScope (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:1626:19)
+    at ScopeHandler.declareName (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:1592:12)
+    at JSXParserMixin.declareNameFromIdentifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7538:16)
+    at JSXParserMixin.checkIdentifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7534:12)
+    at JSXParserMixin.checkLVal (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7475:12)
+    at JSXParserMixin.finishImportSpecifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14184:10)
+    at JSXParserMixin.parseImportSpecifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14341:17)
+    at JSXParserMixin.parseNamedImportSpecifiers (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14320:36)
+    at JSXParserMixin.parseImportSpecifiersAndAfter (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14160:37)
+    at JSXParserMixin.parseImport (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14153:17)
+    at JSXParserMixin.parseStatementContent (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12795:27)
+    at JSXParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12685:17)
+    at JSXParserMixin.parseModuleItem (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12662:17)
+    at JSXParserMixin.parseBlockOrModuleBlockBody (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13235:36)
+    at JSXParserMixin.parseBlockBody (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13228:10)
+    at JSXParserMixin.parseProgram (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12541:10)
+    at JSXParserMixin.parseTopLevel (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12531:25)
+    at JSXParserMixin.parse (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14410:10)
+    at parse (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14444:38)
+    at parser (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/core/lib/transformation/index.js:22:50)
+    at run.next (<anonymous>)
+    at transform (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/core/lib/transform.js:22:33)
+    at transform.next (<anonymous>)
+    at step (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/gensync/index.js:261:32)
+    at /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/gensync/index.js:223:11)
+ @ ./src/index.js 5:0-24 11:32-35
+
+webpack 5.99.9 compiled with 1 error in 111 ms
+assets by status 1.92 KiB [cached] 1 asset
+assets by path *.js 1.38 MiB
+  asset bundle.js 1.38 MiB [emitted] (name: main)
+  asset main.b06cfecff64df61455fc.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
+asset main.b06cfecff64df61455fc.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.38 MiB = bundle.js 1.38 MiB main.b06cfecff64df61455fc.hot-update.js 854 bytes
+cached modules 1.26 MiB [cached] 39 modules
+runtime modules 27.5 KiB 14 modules
+./src/App.js 39 bytes [built] [1 error]
+
+ERROR in ./src/App.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'HomePage' has already been declared. (23:7)
+
+  21 | import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+  22 | import './App.css';
+> 23 | import HomePage from './pages/HomePage';
      |        ^
+  24 | import ItineraryPage from './pages/ItineraryPage';
+  25 | import WeatherPage from './pages/WeatherPage';
+  26 | import ChatPage from './pages/ChatPage';
+    at constructor (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:363:19)
+    at JSXParserMixin.raise (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:6609:19)
+    at ScopeHandler.checkRedeclarationInScope (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:1626:19)
+    at ScopeHandler.declareName (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:1592:12)
+    at JSXParserMixin.declareNameFromIdentifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7538:16)
+    at JSXParserMixin.checkIdentifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7534:12)
+    at JSXParserMixin.checkLVal (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7475:12)
+    at JSXParserMixin.finishImportSpecifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14184:10)
+    at JSXParserMixin.parseImportSpecifierLocal (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14181:31)
+    at JSXParserMixin.maybeParseDefaultImportSpecifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14288:12)
+    at JSXParserMixin.parseImportSpecifiersAndAfter (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14157:29)
+    at JSXParserMixin.parseImport (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14153:17)
+    at JSXParserMixin.parseStatementContent (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12795:27)
+    at JSXParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12685:17)
+    at JSXParserMixin.parseModuleItem (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12662:17)
+    at JSXParserMixin.parseBlockOrModuleBlockBody (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13235:36)
+    at JSXParserMixin.parseBlockBody (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:13228:10)
+    at JSXParserMixin.parseProgram (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12541:10)
+    at JSXParserMixin.parseTopLevel (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12531:25)
+    at JSXParserMixin.parse (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14410:10)
+    at parse (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14444:38)
+    at parser (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/core/lib/transformation/index.js:22:50)
+    at run.next (<anonymous>)
+    at transform (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/core/lib/transform.js:22:33)
+    at transform.next (<anonymous>)
+    at step (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/gensync/index.js:261:32)
+    at /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/gensync/index.js:223:11)
+ @ ./src/index.js 5:0-24 11:32-35
+
+webpack 5.99.9 compiled with 1 error in 39 ms
+assets by status 1.92 KiB [cached] 1 asset
+assets by path *.js 1.38 MiB
+  asset bundle.js 1.38 MiB [emitted] (name: main)
+  asset main.6c8cb6d1b06dd0fa9b80.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
+asset main.6c8cb6d1b06dd0fa9b80.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.38 MiB = bundle.js 1.38 MiB main.6c8cb6d1b06dd0fa9b80.hot-update.js 854 bytes
+cached modules 1.26 MiB [cached] 39 modules
+runtime modules 27.5 KiB 14 modules
+./src/App.js 39 bytes [built] [1 error]
+
+ERROR in ./src/App.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'HomePage' has already been declared. (24:7)
+
   22 | import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
   23 | import './App.css';
-  24 |
+> 24 | import HomePage from './pages/HomePage';
+     |        ^
+  25 | import ItineraryPage from './pages/ItineraryPage';
+  26 | import WeatherPage from './pages/WeatherPage';
+  27 | import ChatPage from './pages/ChatPage';
     at constructor (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:363:19)
     at JSXParserMixin.raise (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:6609:19)
     at ScopeHandler.checkRedeclarationInScope (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:1626:19)
@@ -328,24 +240,24 @@ webpack 5.99.9 compiled with 1 error in 35 ms
 assets by status 1.92 KiB [cached] 1 asset
 assets by path *.js 1.38 MiB
   asset bundle.js 1.38 MiB [emitted] (name: main)
-  asset main.3ccd4d7ade39824b2e4f.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
-asset main.3ccd4d7ade39824b2e4f.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.38 MiB = bundle.js 1.38 MiB main.3ccd4d7ade39824b2e4f.hot-update.js 854 bytes
+  asset main.f5c0125e096b3a28eba0.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
+asset main.f5c0125e096b3a28eba0.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.38 MiB = bundle.js 1.38 MiB main.f5c0125e096b3a28eba0.hot-update.js 854 bytes
 cached modules 1.26 MiB [cached] 39 modules
 runtime modules 27.5 KiB 14 modules
 ./src/App.js 39 bytes [built] [1 error]
 
 ERROR in ./src/App.js
 Module build failed (from ./node_modules/babel-loader/lib/index.js):
-SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'Router' has already been declared. (20:26)
+SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'Router' has already been declared. (23:26)
 
-  18 |  * Color palette is sourced from CSS variables for vibrancy and accessibility.
-  19 |  */
-> 20 | import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-     |                           ^
   21 | import './App.css';
   22 |
-  23 | import HomePage from './pages/HomePage';
+> 23 | import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+     |                           ^
+  24 | import './App.css';
+  25 | import HomePage from './pages/HomePage';
+  26 | import ItineraryPage from './pages/ItineraryPage';
     at constructor (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:363:19)
     at JSXParserMixin.raise (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:6609:19)
     at ScopeHandler.checkRedeclarationInScope (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:1626:19)
@@ -380,28 +292,28 @@ SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/tr
     at async.call.result.err.err (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/gensync/index.js:223:11)
  @ ./src/index.js 5:0-24 11:32-35
 
-webpack 5.99.9 compiled with 1 error in 30 ms
+webpack 5.99.9 compiled with 1 error in 35 ms
 assets by status 1.92 KiB [cached] 1 asset
 assets by path *.js 1.38 MiB
   asset bundle.js 1.38 MiB [emitted] (name: main)
-  asset main.b92617d81ae3d1d0d8bc.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
-asset main.b92617d81ae3d1d0d8bc.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.38 MiB = bundle.js 1.38 MiB main.b92617d81ae3d1d0d8bc.hot-update.js 854 bytes
+  asset main.54e0d3f20fc19052a9d8.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
+asset main.54e0d3f20fc19052a9d8.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.38 MiB = bundle.js 1.38 MiB main.54e0d3f20fc19052a9d8.hot-update.js 854 bytes
 cached modules 1.26 MiB [cached] 39 modules
 runtime modules 27.5 KiB 14 modules
 ./src/App.js 39 bytes [built] [1 error]
 
 ERROR in ./src/App.js
 Module build failed (from ./node_modules/babel-loader/lib/index.js):
-SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'HomePage' has already been declared. (22:7)
+SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'HomePage' has already been declared. (24:7)
 
-  20 | import './App.css';
-  21 |
-> 22 | import HomePage from './pages/HomePage';
+  22 |
+  23 | import './App.css';
+> 24 | import HomePage from './pages/HomePage';
      |        ^
-  23 | import ItineraryPage from './pages/ItineraryPage';
-  24 | import WeatherPage from './pages/WeatherPage';
-  25 | import ChatPage from './pages/ChatPage';
+  25 | import ItineraryPage from './pages/ItineraryPage';
+  26 | import WeatherPage from './pages/WeatherPage';
+  27 | import ChatPage from './pages/ChatPage';
     at constructor (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:363:19)
     at JSXParserMixin.raise (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:6609:19)
     at ScopeHandler.checkRedeclarationInScope (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:1626:19)
@@ -436,28 +348,28 @@ SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/tr
     at async.call.result.err.err (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/gensync/index.js:223:11)
  @ ./src/index.js 5:0-24 11:32-35
 
-webpack 5.99.9 compiled with 1 error in 41 ms
+webpack 5.99.9 compiled with 1 error in 33 ms
 assets by status 1.92 KiB [cached] 1 asset
 assets by path *.js 1.38 MiB
   asset bundle.js 1.38 MiB [emitted] (name: main)
-  asset main.179cebf20ebb215a22f2.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
-asset main.179cebf20ebb215a22f2.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.38 MiB = bundle.js 1.38 MiB main.179cebf20ebb215a22f2.hot-update.js 854 bytes
+  asset main.a427c6a6dfa68c2eb319.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
+asset main.a427c6a6dfa68c2eb319.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.38 MiB = bundle.js 1.38 MiB main.a427c6a6dfa68c2eb319.hot-update.js 854 bytes
 cached modules 1.26 MiB [cached] 39 modules
 runtime modules 27.5 KiB 14 modules
 ./src/App.js 39 bytes [built] [1 error]
 
 ERROR in ./src/App.js
 Module build failed (from ./node_modules/babel-loader/lib/index.js):
-SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'Router' has already been declared. (22:26)
+SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'HomePage' has already been declared. (25:7)
 
-  20 | import './App.css';
-  21 |
-> 22 | import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-     |                           ^
   23 |
-  24 | import HomePage from './pages/HomePage';
-  25 | import ItineraryPage from './pages/ItineraryPage';
+  24 | import './App.css';
+> 25 | import HomePage from './pages/HomePage';
+     |        ^
+  26 | import ItineraryPage from './pages/ItineraryPage';
+  27 | import WeatherPage from './pages/WeatherPage';
+  28 | import ChatPage from './pages/ChatPage';
     at constructor (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:363:19)
     at JSXParserMixin.raise (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:6609:19)
     at ScopeHandler.checkRedeclarationInScope (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:1626:19)
@@ -466,9 +378,9 @@ SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/tr
     at JSXParserMixin.checkIdentifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7534:12)
     at JSXParserMixin.checkLVal (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7475:12)
     at JSXParserMixin.finishImportSpecifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14184:10)
-    at JSXParserMixin.parseImportSpecifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14341:17)
-    at JSXParserMixin.parseNamedImportSpecifiers (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14320:36)
-    at JSXParserMixin.parseImportSpecifiersAndAfter (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14160:37)
+    at JSXParserMixin.parseImportSpecifierLocal (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14181:31)
+    at JSXParserMixin.maybeParseDefaultImportSpecifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14288:12)
+    at JSXParserMixin.parseImportSpecifiersAndAfter (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14157:29)
     at JSXParserMixin.parseImport (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14153:17)
     at JSXParserMixin.parseStatementContent (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12795:27)
     at JSXParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12685:17)
@@ -496,24 +408,24 @@ webpack 5.99.9 compiled with 1 error in 29 ms
 assets by status 1.92 KiB [cached] 1 asset
 assets by path *.js 1.38 MiB
   asset bundle.js 1.38 MiB [emitted] (name: main)
-  asset main.93424b10943578e34023.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
-asset main.93424b10943578e34023.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.38 MiB = bundle.js 1.38 MiB main.93424b10943578e34023.hot-update.js 854 bytes
+  asset main.28353d576382ca63102d.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
+asset main.28353d576382ca63102d.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.38 MiB = bundle.js 1.38 MiB main.28353d576382ca63102d.hot-update.js 854 bytes
 cached modules 1.26 MiB [cached] 39 modules
 runtime modules 27.5 KiB 14 modules
 ./src/App.js 39 bytes [built] [1 error]
 
 ERROR in ./src/App.js
 Module build failed (from ./node_modules/babel-loader/lib/index.js):
-SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'Router' has already been declared. (22:26)
+SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'Router' has already been declared. (23:26)
 
-  20 | import './App.css';
-  21 |
-> 22 | import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+  21 | import './App.css';
+  22 |
+> 23 | import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
      |                           ^
-  23 | import './App.css';
-  24 | import HomePage from './pages/HomePage';
-  25 | import ItineraryPage from './pages/ItineraryPage';
+  24 |
+  25 | import './App.css';
+  26 | import HomePage from './pages/HomePage';
     at constructor (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:363:19)
     at JSXParserMixin.raise (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:6609:19)
     at ScopeHandler.checkRedeclarationInScope (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:1626:19)
@@ -549,21 +461,27 @@ SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/tr
  @ ./src/index.js 5:0-24 11:32-35
 
 webpack 5.99.9 compiled with 1 error in 28 ms
-assets by status 1.38 MiB [cached] 2 assets
-cached modules 1.26 MiB (javascript) 27.5 KiB (runtime) [cached] 53 modules
+assets by status 1.92 KiB [cached] 1 asset
+assets by path *.js 1.38 MiB
+  asset bundle.js 1.38 MiB [emitted] (name: main)
+  asset main.a36a4e9d583833aedd47.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
+asset main.a36a4e9d583833aedd47.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.38 MiB = bundle.js 1.38 MiB main.a36a4e9d583833aedd47.hot-update.js 854 bytes
+cached modules 1.26 MiB [cached] 39 modules
+runtime modules 27.5 KiB 14 modules
 ./src/App.js 39 bytes [built] [1 error]
 
 ERROR in ./src/App.js
 Module build failed (from ./node_modules/babel-loader/lib/index.js):
-SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'Router' has already been declared. (22:26)
+SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/src/App.js: Identifier 'HomePage' has already been declared. (25:7)
 
-  20 | import './App.css';
-  21 |
-> 22 | import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-     |                           ^
-  23 | import './App.css';
-  24 | import HomePage from './pages/HomePage';
-  25 | import ItineraryPage from './pages/ItineraryPage';
+  23 |
+  24 | import './App.css';
+> 25 | import HomePage from './pages/HomePage';
+     |        ^
+  26 | import ItineraryPage from './pages/ItineraryPage';
+  27 | import WeatherPage from './pages/WeatherPage';
+  28 | import ChatPage from './pages/ChatPage';
     at constructor (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:363:19)
     at JSXParserMixin.raise (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:6609:19)
     at ScopeHandler.checkRedeclarationInScope (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:1626:19)
@@ -572,9 +490,9 @@ SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/tr
     at JSXParserMixin.checkIdentifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7534:12)
     at JSXParserMixin.checkLVal (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:7475:12)
     at JSXParserMixin.finishImportSpecifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14184:10)
-    at JSXParserMixin.parseImportSpecifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14341:17)
-    at JSXParserMixin.parseNamedImportSpecifiers (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14320:36)
-    at JSXParserMixin.parseImportSpecifiersAndAfter (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14160:37)
+    at JSXParserMixin.parseImportSpecifierLocal (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14181:31)
+    at JSXParserMixin.maybeParseDefaultImportSpecifier (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14288:12)
+    at JSXParserMixin.parseImportSpecifiersAndAfter (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14157:29)
     at JSXParserMixin.parseImport (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:14153:17)
     at JSXParserMixin.parseStatementContent (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12795:27)
     at JSXParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/@babel/parser/lib/index.js:12685:17)
@@ -598,4 +516,41 @@ SyntaxError: /home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/tr
     at async.call.result.err.err (/home/kavia/workspace/code-generation/travelsmart-ai-72-e2071575/travelsmart_ai/node_modules/gensync/index.js:223:11)
  @ ./src/index.js 5:0-24 11:32-35
 
-webpack 5.99.9 compiled with 1 error in 21 ms
+webpack 5.99.9 compiled with 1 error in 39 ms
+assets by status 1.92 KiB [cached] 1 asset
+assets by path *.js 1.39 MiB
+  asset bundle.js 1.38 MiB [emitted] (name: main)
+  asset main.28353d576382ca63102d.hot-update.js 8.34 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.28353d576382ca63102d.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.39 MiB = bundle.js 1.38 MiB main.28353d576382ca63102d.hot-update.js 8.34 KiB
+cached modules 1.26 MiB [cached] 38 modules
+runtime modules 27.5 KiB 14 modules
+javascript modules 4.22 KiB
+  ./src/index.js 530 bytes [code generated]
+  ./src/App.js 3.7 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 87 ms
+assets by status 1.92 KiB [cached] 1 asset
+assets by path *.js 2.32 MiB
+  asset bundle.js 1.85 MiB [emitted] (name: main)
+  asset main.8bfcb7c3e788d391b6c3.hot-update.js 485 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.8bfcb7c3e788d391b6c3.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 2.32 MiB = bundle.js 1.85 MiB main.8bfcb7c3e788d391b6c3.hot-update.js 485 KiB
+cached modules 1.26 MiB [cached] 39 modules
+runtime modules 27.5 KiB 14 modules
+orphan modules 12.8 KiB [orphan] 3 modules
+javascript modules 431 KiB
+  modules by path ./src/ 52 KiB
+    modules by path ./src/pages/*.js 42.7 KiB 4 modules
+    modules by path ./src/*.css 5.29 KiB
+      ./src/App.css 2.22 KiB [built] [code generated]
+      ./node_modules/css-loader/dist/cjs.js!./src/App.css 3.07 KiB [built] [code generated]
+    ./src/App.js 4 KiB [built] [code generated]
+  modules by path ./node_modules/ 379 KiB
+    ./node_modules/react-router/dist/development/chunk-NL6KNZEE.mjs 365 KiB [built] [code generated]
+    ./node_modules/react-router/node_modules/cookie/dist/index.js 8.14 KiB [built] [code generated]
+    ./node_modules/set-cookie-parser/lib/set-cookie.js 6.47 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 538 ms
+assets by status 1.85 MiB [cached] 2 assets
+cached modules 1.69 MiB (javascript) 27.5 KiB (runtime) [cached] 65 modules
+./src/App.js 4 KiB [built]
+webpack 5.99.9 compiled successfully in 44 ms

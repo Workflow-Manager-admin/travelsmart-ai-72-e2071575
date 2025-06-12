@@ -4,27 +4,13 @@
  * Sets up routing and navigation for Home, Itinerary, Weather, and Chat pages.
  */
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
-
-import HomePage from './pages/HomePage';
-import ItineraryPage from './pages/ItineraryPage';
-import WeatherPage from './pages/WeatherPage';
-import ChatPage from './pages/ChatPage';
-
-/**
- * Main App Container for TravelSmart AI.
- * Sets up routing and navigation for Home, Itinerary, Weather, and Chat pages.
- * Color palette is sourced from CSS variables for vibrancy and accessibility.
- */
-import './App.css';
-
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/HomePage';
 import ItineraryPage from './pages/ItineraryPage';
 import WeatherPage from './pages/WeatherPage';
 import ChatPage from './pages/ChatPage';
+
 
 function App() {
   return (
