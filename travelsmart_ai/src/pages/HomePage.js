@@ -4,17 +4,13 @@ import { Link } from 'react-router-dom';
 // PUBLIC_INTERFACE
 /**
  * TravelSmart AI Home Page: brief intro and navigation links.
+ * Uses new pastel palette for styling.
  */
-const COLORS = {
-  primary: '#65809a',
-  secondary: '#e02424',
-  accent: '#f39512',
-};
 const HomePage = () => (
   <div className="container">
     <div className="hero">
-      <h1 className="title" style={{ color: COLORS.primary }}>TravelSmart AI</h1>
-      <div className="subtitle" style={{ color: COLORS.secondary, fontSize: '1.3rem' }}>
+      <h1 className="title">TravelSmart AI</h1>
+      <div className="subtitle" style={{ color: 'var(--accent)', fontSize: '1.3rem' }}>
         Plan smarter. Explore further. All with AI.
       </div>
       <p className="description">
@@ -26,13 +22,13 @@ const HomePage = () => (
         display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center', marginTop: 20,
       }}>
         <Link to="/itinerary">
-          <button className="btn btn-large" style={{ background: COLORS.primary }}>Generate Itinerary</button>
+          <button className="btn btn-large" style={{ background: 'var(--button-bg)', color: 'var(--button-text)' }}>Generate Itinerary</button>
         </Link>
         <Link to="/weather">
-          <button className="btn btn-large" style={{ background: COLORS.accent }}>Check Weather</button>
+          <button className="btn btn-large" style={{ background: 'var(--accent)', color: 'var(--button-text)' }}>Check Weather</button>
         </Link>
         <Link to="/chat">
-          <button className="btn btn-large" style={{ background: COLORS.secondary }}>AI Chatbot</button>
+          <button className="btn btn-large" style={{ background: 'var(--secondary-text)', color: 'var(--button-text)' }}>AI Chatbot</button>
         </Link>
       </div>
     </div>

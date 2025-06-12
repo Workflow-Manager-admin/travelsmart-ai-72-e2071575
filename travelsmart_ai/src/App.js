@@ -12,37 +12,41 @@ import ItineraryPage from './pages/ItineraryPage';
 import WeatherPage from './pages/WeatherPage';
 import ChatPage from './pages/ChatPage';
 
-// App-wide color palette (matches spec)
-const COLORS = {
-  primary: '#65809a',
-  secondary: '#e02424',
-  accent: '#f39512',
-};
+/**
+ * Main App Container for TravelSmart AI.
+ * Sets up routing and navigation for Home, Itinerary, Weather, and Chat pages.
+ * Color palette is sourced from CSS variables for vibrancy and accessibility.
+ */
+import './App.css';
+
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './App.css';
+import HomePage from './pages/HomePage';
+import ItineraryPage from './pages/ItineraryPage';
+import WeatherPage from './pages/WeatherPage';
+import ChatPage from './pages/ChatPage';
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <nav
-          className="navbar"
-          style={{
-            backgroundColor: '#fff',
-            borderBottom: `2px solid ${COLORS.primary}`,
-            color: COLORS.primary,
-          }}
-        >
-          <div className="logo" style={{ color: COLORS.primary }}>
-            <span className="logo-symbol" style={{ color: COLORS.secondary, fontSize: 32 }}>✈️</span>
+        <nav className="navbar">
+          <div className="logo">
+            <span className="logo-symbol" style={{ fontSize: 32 }}>✈️</span>
             <span>TravelSmart AI</span>
           </div>
           <div style={{ display: 'flex', gap: 20 }}>
-            <Link className="navbar-link" to="/" style={{ color: COLORS.primary, textDecoration: 'none', fontWeight: 500 }}>Home</Link>
-            <Link className="navbar-link" to="/itinerary" style={{ color: COLORS.primary, textDecoration: 'none' }}>Itinerary</Link>
-            <Link className="navbar-link" to="/weather" style={{ color: COLORS.primary, textDecoration: 'none' }}>Weather</Link>
-            <Link className="navbar-link" to="/chat" style={{ color: COLORS.primary, textDecoration: 'none' }}>Chat</Link>
+            <Link className="navbar-link" to="/" style={{ color: "var(--heading)", textDecoration: 'none', fontWeight: 500 }}>Home</Link>
+            <Link className="navbar-link" to="/itinerary" style={{ color: "var(--heading)", textDecoration: 'none' }}>Itinerary</Link>
+            <Link className="navbar-link" to="/weather" style={{ color: "var(--heading)", textDecoration: 'none' }}>Weather</Link>
+            <Link className="navbar-link" to="/chat" style={{ color: "var(--heading)", textDecoration: 'none' }}>Chat</Link>
           </div>
         </nav>
-        <div style={{ paddingTop: 90, minHeight: 'calc(100vh - 56px)', background: '#f8fafc' }}>
+        <div style={{
+          paddingTop: 90,
+          minHeight: 'calc(100vh - 56px)',
+          background: 'var(--primary-bg)'
+        }}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/itinerary" element={<ItineraryPage />} />

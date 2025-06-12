@@ -1,134 +1,222 @@
-import React, { useRef, useState } from 'react';
-
-const COLORS = {
-  primary: '#65809a',
-  secondary: '#e02424',
-  accent: '#f39512',
-};
-// Simple fake AI reply generator (replace with Cohere or real LLM API)
-async function fakeAIReply(question) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      if (/weather/i.test(question)) {
-        resolve("You can check the local weather using our Weather tab! Where would you like to go?");
-      } else if (/budget/i.test(question)) {
-        resolve("A good backpacker's budget is $50–$70/day in Southeast Asia, $100–$150/day in Europe, excluding flights.");
-      } else if (/paris/i.test(question)) {
-        resolve("Paris is renowned for the Eiffel Tower, Louvre, and charming neighborhoods. Spring/Fall brings mild weather!");
-      } else if (/food|cuisine/i.test(question)) {
-        resolve("Try some local street food and check TripAdvisor for top restaurants in your destination!");
-      } else {
-        resolve("I'm TravelSmart – ask me anything about travel, destinations, or planning tips!");
-      }
-    }, 1100);
-  });
-}
+import React, { useState, useRef, useEffect } from "react";
 
 // PUBLIC_INTERFACE
-/**
- * Travel Chatbot Page - input field, chat transcript, and AI (placeholder) response.
- */
-const ChatPage = () => {
-  const [input, setInput] = useState('');
-  const [chats, setChats] = useState([
-    { sender: 'bot', text: "Hi! I'm your AI travel assistant. Ask me anything about your trip or a destination!" }
+function ChatPage() {
+  /**
+   * Renders the Chat Page containing the AI travel chatbot.
+   * Allows user to enter queries and get AI responses in a conversational UI.
+   */
+  const [messages, setMessages] = useState([
+    {
+      sender: "ai",
+      text: "Hi there! 👋 I'm your AI travel assistant. How can I help plan your trip today?",
+    },
   ]);
-  const [loading, setLoading] = useState(false);
-  const inputRef = useRef();
+  const [input, setInput] = useState("");
+  const [waiting, setWaiting] = useState(false);
 
-  async function handleSend(e) {
-    e.preventDefault();
-    if (!input.trim()) return;
-    const q = input.trim();
-    setChats(c => [...c, { sender: 'user', text: q }]);
-    setInput('');
-    setLoading(true);
-    // Fake AI response
-    const aiReply = await fakeAIReply(q);
-    setChats(c => [...c, { sender: 'bot', text: aiReply }]);
-    setLoading(false);
-    inputRef.current?.focus();
+  const chatEndRef = useRef(null);
+
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
+  async function sendMessage(e) {
+  e.preventDefault();
+  if (!input.trim()) return;
+
+  const userText = input.trim();
+  setMessages((prev) => [...prev, { sender: "user", text: userText }]);
+  setInput("");
+  setWaiting(true);
+
+  try {
+    const API_URL ='https://api.cohere.ai/v1/chat' 
+    //process.env.REACT_APP_CHAT_API_URL;
+    const API_KEY = 'xyV9r163fmM8ieMhIFAUbmymr6DakgKJ8wj520lv'
+    //process.env.REACT_APP_CHAT_API_KEY;
+
+    //console.log("🔧 API URL:", API_URL);
+    //console.log("🔐 API KEY:", API_KEY ? "Loaded ✅" : "Missing ❌");
+
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${API_KEY}`,
+      },
+      body: JSON.stringify({
+        message: userText,
+        model: "command-r-plus", // or "command-r" depending on your plan
+        temperature: 0.7,
+        chat_history: messages.map((msg) => ({
+          role: msg.sender === "user" ? "USER" : "CHATBOT",
+          message: msg.text,
+        })),
+      }),
+  });
+
+    if (!response.ok) {
+      const err = await response.text();
+      console.error("❌ API Error:", response.status, err);
+      setMessages((prev) => [
+      ...prev,
+      { sender: "ai", text: `Error: ${err || 'Unknown issue occurred with the AI API.'}` },
+]);
+      //throw new Error("API request failed");
+    }
+
+    const data = await response.json();
+    console.log("✅ API Response:", data);
+    const aiReply = data.text || "Sorry, no useful answer returned.";
+    setMessages((prev) => [...prev, { sender: "ai", text: aiReply }]);
+  } catch (error) {
+    console.error("⚠️ Chat API Error:", error);
+    setMessages((prev) => [
+      ...prev,
+      { sender: "ai", text: "Oops! Something went wrong. Please try again later." },
+    ]);
   }
 
+  setWaiting(false);
+}
+
+
+  //function getDemoAIReply(text) {
+   // if (/bali|iceland|paris/i.test(text))
+     // return `Great choice! Here are some top things to do in ${text.match(/bali|iceland|paris/i)[0].charAt(0).toUpperCase() + text.match(/bali|iceland|paris/i)[0].slice(1)}:\n• Explore local culture\n• Try local cuisine\n• Visit must-see attractions!`;
+    //if (/pack|packing/i.test(text))
+     // return "When packing for your trip, consider the climate and activities: bring layers, comfy shoes, and don't forget essential documents!";
+    //if (/hello|hi|hey/i.test(text)) return "Hello! How can I assist you with your travel plans?";
+    //return "That's an excellent question! Let me look up the best answer for you. 🌏";
+  //}
+
   return (
-    <div className="container" style={{ maxWidth: 540 }}>
-      <h2 className="title" style={{ color: COLORS.primary, fontSize: '2.1rem' }}>Chat with TravelSmart AI</h2>
-      <div style={{
-        background: '#fff',
-        borderRadius: 8,
-        border: `1.5px solid ${COLORS.primary}22`,
-        minHeight: 320,
-        maxHeight: 400,
-        overflowY: 'auto',
-        padding: '18px 16px 8px 16px',
-        marginBottom: 18,
-        boxShadow: '0 2px 8px #0001'
-      }}>
-        {chats.map((msg, idx) => (
-          <div
-            key={idx}
-            style={{
-              marginBottom: 12,
-              display: 'flex',
-              flexDirection: msg.sender === 'user' ? 'row-reverse' : 'row',
-              gap: 7,
-              alignItems: 'flex-start'
-            }}>
+    <div>
+      <div className="title" style={{ fontSize: '2rem', marginBottom: 10, color: "var(--accent)" }}>
+        AI Travel Chatbot
+      </div>
+      <div className="description" style={{ maxWidth: 600, marginBottom: 22 }}>
+        Ask any travel question and get instant answers, tips, recommendations, and planning help!
+      </div>
+      <div
+        style={{
+          background: "var(--surface-bg)",
+          borderRadius: 10,
+          boxShadow: "0 2px 8px #D6E6F244",
+          padding: 0,
+          maxWidth: 500,
+          margin: "0 auto 12px auto",
+          minHeight: 340,
+          display: "flex",
+          flexDirection: "column",
+          overflow: "hidden"
+        }}
+      >
+        {/* Chat transcript */}
+        <div style={{
+          flex: 1,
+          overflowY: "auto",
+          padding: "20px 18px",
+          background: "var(--primary-bg)",
+          minHeight: 220,
+        }}>
+          {messages.map((msg, i) => (
             <div
+              key={i}
               style={{
-                background: msg.sender === 'bot' ? '#f7fafe' : COLORS.accent,
-                color: msg.sender === 'bot' ? COLORS.primary : '#fff',
-                padding: '7px 13px',
-                borderRadius: 18,
-                maxWidth: 360,
-                fontSize: '1rem',
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: msg.sender === "user" ? "flex-end" : "flex-start",
+                marginBottom: 13,
               }}
             >
-              {msg.text}
+              {msg.sender === "ai" && (
+                <div
+                  style={{
+                    width: 30,
+                    height: 30,
+                    background: "var(--accent)",
+                    borderRadius: "50%",
+                    color: "#fff",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginRight: 8,
+                    fontWeight: 700,
+                    fontSize: 16,
+                  }}
+                  title="TravelGenie AI"
+                >
+                  🤖
+                </div>
+              )}
+              <div
+                style={{
+                  background: msg.sender === "user" ? "var(--button-bg)" : "var(--surface-bg)",
+                  color: msg.sender === "user" ? "var(--button-text)" : "var(--text-color)",
+                  borderRadius: 16,
+                  padding: "9px 16px",
+                  maxWidth: 320,
+                  whiteSpace: "pre-line",
+                  fontSize: "1.09rem",
+                  boxShadow: msg.sender === "ai"
+                    ? "0 2px 4px #D6E6F211"
+                    : "0 2px 4px #D6E6F244",
+                  alignSelf: msg.sender === "user" ? "flex-end" : "flex-start"
+                }}
+              >
+                {msg.text}
+              </div>
             </div>
-          </div>
-        ))}
-        {loading && (
-          <div style={{
-            marginBottom: 8, color: COLORS.secondary, fontStyle: 'italic', fontSize: 15
-          }}>TravelSmart AI is typing...</div>
-        )}
+          ))}
+          <div ref={chatEndRef}/>
+        </div>
+        {/* Input */}
+        <form onSubmit={sendMessage}
+          style={{
+            display: "flex",
+            gap: 12,
+            padding: "12px 14px",
+            borderTop: "1px solid var(--border-color)",
+            background: "var(--surface-bg)"
+          }}>
+          <input
+            type="text"
+            value={input}
+            onChange={e => setInput(e.target.value)}
+            disabled={waiting}
+            className="input"
+            style={{
+              flex: 1,
+              fontSize: "1.08rem",
+            }}
+            placeholder="Ask me anything about your trip…"
+            autoFocus
+            aria-label="Chat input"
+          />
+          <button
+            className="btn"
+            type="submit"
+            disabled={waiting || !input.trim()}
+            style={{
+              background: "var(--button-bg)",
+              color: "var(--button-text)",
+              fontWeight: 600,
+              minWidth: 80,
+              fontSize: "1.08rem"
+            }}
+            aria-label="Send"
+          >
+            {waiting ? "..." : "Send"}
+          </button>
+        </form>
       </div>
-      <form
-        onSubmit={handleSend}
-        style={{ display: 'flex', gap: 10 }}
-        autoComplete="off"
-      >
-        <input
-          ref={inputRef}
-          style={{
-            flex: 1,
-            padding: 11,
-            borderRadius: 18,
-            border: `1px solid ${COLORS.primary}`,
-            fontSize: '1.07rem',
-          }}
-          type="text"
-          value={input}
-          onChange={e => setInput(e.target.value)}
-          placeholder="Type your travel question..."
-          disabled={loading}
-        />
-        <button
-          className="btn"
-          type="submit"
-          disabled={loading || !input.trim()}
-          style={{
-            borderRadius: 16,
-            background: COLORS.primary,
-            fontWeight: 600,
-            minWidth: 85,
-          }}
-        >
-          {loading ? '...' : 'Send'}
-        </button>
-      </form>
+      <div style={{ textAlign: "center", color: "var(--secondary-text)", fontSize: "0.97rem" }}>
+        Your fun travel assistant is here 24/7! <span role="img" aria-label="earth">🌍</span>
+      </div>
     </div>
   );
-};
+}
+
 export default ChatPage;
