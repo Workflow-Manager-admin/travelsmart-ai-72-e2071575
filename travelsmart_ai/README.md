@@ -45,6 +45,27 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Customization
 
+### Environment Variables & API Keys
+
+**How to use API keys securely:**
+- Add all API keys, service secrets, and configuration to `.env` in the project root.
+- Prefix all such variables with `REACT_APP_` to expose them to the React frontend bundle (required by create-react-app and similar setups).
+- Access these in your React code using `process.env.REACT_APP_YOUR_KEY`.
+- **Never commit real credentials to git.** This project includes `.env` in `.gitignore`.
+- After any change to `.env`, restart the development server for updates to take effect.
+
+**Example `.env`:**
+```env
+REACT_APP_WEATHER_KEY=your_openweathermap_key
+REACT_APP_AMADEUS_API_KEY=your_amadeus_key
+REACT_APP_AMADEUS_API_SECRET=your_secret
+```
+
+**Example usage in JS:**
+```js
+const apiKey = process.env.REACT_APP_WEATHER_KEY;
+```
+
 ### Colors
 
 The main brand colors are defined as CSS variables in `src/App.css`:

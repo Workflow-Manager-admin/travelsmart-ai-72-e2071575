@@ -6,8 +6,12 @@ const COLORS = {
   accent: '#f39512',
 };
 
-// For demonstration: Insert your OpenWeatherMap API key here for full functionality
-const OPENWEATHERMAP_API_KEY = 'YOUR_OPENWEATHERMAP_API_KEY';
+/**
+ * Use Weather API Key securely via .env:
+ * Define REACT_APP_WEATHER_KEY in .env, access here via process.env.REACT_APP_WEATHER_KEY.
+ * Never hardcode API keys. See .env documentation for details.
+ */
+const OPENWEATHERMAP_API_KEY = process.env.REACT_APP_WEATHER_KEY;
 
 // PUBLIC_INTERFACE
 /**
